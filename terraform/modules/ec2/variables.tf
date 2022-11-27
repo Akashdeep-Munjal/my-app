@@ -48,8 +48,3 @@ variable "user_data_file_path" {
     type = string
 
 }
-
-variable "user_data_docker_file_path" {
-    type = list(string)
-
-}

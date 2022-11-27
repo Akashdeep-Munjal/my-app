@@ -1,5 +1,10 @@
 #!/bin/bash
 # Instance Identity Metadata Reference - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-identity-documents.html
+
+# sleep 20
+
+sudo echo nameserver 8.8.8.8 > /etc/resolv.conf
+
 sudo yum update -y
 sudo yum install -y httpd
 sudo systemctl enable httpd
@@ -10,3 +15,11 @@ sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(250, 210, 21
 sudo curl http://169.254.169.254/latest/dynamic/instance-identity/document -o /var/www/html/app1/metadata.html
 
 
+##################
+## Installing Docker
+###
+
+sudo amazon-linux-extras install docker -y
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+sudo chkconfig docker on

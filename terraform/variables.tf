@@ -73,12 +73,12 @@ variable "ec2_instance_name" {
 }
 
 variable "user_data_file_path" {
-  type    = list(string)
-  default = ["./files/app-install.sh", "./files/docker-install.sh"]
+  type    = string
+  default = "./files/app-install.sh"
 }
 
 variable "ec2_instance_count" {
   type    = number
-  default = 3
+  default = 1
 
 }
