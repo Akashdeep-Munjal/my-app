@@ -28,8 +28,6 @@ Github-Webhook: ![Alt text](images/github-jenkins-web-hook.png?raw=true "Github-
 
 Jenkins Node add: ![Alt text](images/node-add-jenkins.png?raw=true "Jenkins Node Addition") 
 
-Pipelines: ![Alt text](images/pipelines.png?raw=true "Pipelines") 
-
 Managed Nodes By Jenkins: ![Alt text](images/managed-nodes-by-jenkins.png?raw=true "Managed Nodes By jenkins Server")
 
 Postman Put: ![Alt text](images/postman-put-api.png?raw=true "Postman PUT api call")
