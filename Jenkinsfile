@@ -9,6 +9,7 @@ def getDockerTag() {
           VERSION = "${env.BUILD_ID}"
       }
 
+    stages{
     stage('SCM Checkout of Reporting Service'){
       steps {
           checkout([
