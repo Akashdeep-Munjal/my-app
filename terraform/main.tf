@@ -7,7 +7,6 @@ module "vpc" {
   public_subnets          = var.public_subnets
   env                     = var.env
   costcenter              = var.costcenter
-  #   flow_log_destination_type =   var.flow_log_destination_type
 }
 
 module "elb" {

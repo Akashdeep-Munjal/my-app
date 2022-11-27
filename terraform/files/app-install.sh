@@ -23,3 +23,16 @@ sudo amazon-linux-extras install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 sudo chkconfig docker on
+
+
+
+##################
+## Adding jdk to add instances as Jenkins agent to Deploy App
+###
+
+sudo amazon-linux-extras install java-openjdk11 -y
+
+
+
+# curl -sO http://3.109.2.136:8080/jnlpJars/agent.jar
+# java -jar agent.jar -jnlpUrl http://3.109.2.136:8080/computer/my%2Dapp%2D2/jenkins-agent.jnlp -secret 5d164961f812dd93063cda79bd329dbfba0cdd90d08ee4e313615ea0912352ea -workDir "/opt/jenkins"
