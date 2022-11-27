@@ -1,6 +1,6 @@
 FROM maven:3 as build
 WORKDIR  /my-app
-COPY . .
+COPY ./my-app/ .
 RUN mvn clean install
 
 FROM openjdk:8-jre
