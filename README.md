@@ -24,7 +24,6 @@
 Screenshots:
 
 
-
 Github-Webhook: ![Alt text](images/github-jenkins-web-hook.png?raw=true "Github-Jenkins-Webhook") 
 
 Jenkins Node add: ![Alt text](images/node-add-jenkins.png?raw=true "Jenkins Node Addition") 
